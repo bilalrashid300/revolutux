@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap:https://revolutux.com/sitemap.xml

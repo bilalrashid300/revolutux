@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+.gradient-bg {
+  background: linear-gradient(
+    to right,
+    #934b38,
+    #683b3b,
+    #472f3d,
+    #2b253f,
+    #191e40
+  );
+}
+
+.hero-bg {
+  background: url("../public/hero-bg.svg") center center/cover no-repeat;
+}
+
+.hero-btn {
+  background: linear-gradient(to bottom, #b157fd, #8735ef);
+}
+.green-to-purple {
+  background: linear-gradient(to top, #4479a2, #6770be, #8e66de);
+}
+
+.seen-on {
+  width: 211px;
+  height: 73px;
+  background: rgba(217, 217, 217, 0.2);
+  box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.roadmap-card {
+  background: rgba(217, 217, 217, 0.2);
+  box-shadow: 16px 16px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.tokenomics-bg {
+  background: url("../public/tokenomics-bg.svg") center center/cover no-repeat;
+  box-shadow: 16px 12px 4px rgba(254, 254, 254, 0.29);
+}
+
+.reversed {
+  visibility: hidden;
+  display: block;
+}
+
+@media (max-width: 492px) {
+  .reversed {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.active-nav {
+  transform: translateX(0%);
+  transition: 0.5s;
+}
+
+.inactive-nav {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  [class*="ReactFlagsSelect-module_selectBtn"] {
+    border: thin solid #ffffff !important;
+    color: #fff !important;
+  }
+  
+  .locale-switcher button [class*="ReactFlagsSelect-module_label"] {
+    display: none;
+  }
+}
+
+/* transform transition-all duration-75 ${isOpen ? 'translate-x-0' : '-translate-x-full'}  */
